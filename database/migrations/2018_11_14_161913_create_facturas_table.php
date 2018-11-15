@@ -17,8 +17,6 @@ class CreateFacturasTable extends Migration
             $table->increments('id');
             $table->string('iva');
             $table->string('FechaFactura');
-            $table->string('id_cliente');
-            $table->string('id_vendedor');
             $table->timestamps();
         });
     }
