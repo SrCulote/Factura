@@ -16,18 +16,18 @@ class CreateFacturaProductoTable extends Migration
         Schema::create('factura_producto', function (Blueprint $table) {
             $table->increments('id');
            
-            $table->integer('factura_id');
-            $table->integer('producto_id');
+            $table->unsignedInteger('factura_id')->nullable;
+            $table->unsignedInteger('producto_id')->nullable;
             $table->timestamps();
-
-            $table->foreign('factura_id')->references('id')->on('facturas')
-            ->onDelete('cascade')
-            ->onUpdate('cascade');
 
 
             $table->foreign('producto_id')->references('id')->on('productos')
             ->onDelete('cascade')
             ->onUpdate('cascade');
+            $table->foreign('factura_id')->references('id')->on('facturas')
+            ->onDelete('cascade')
+            ->onUpdate('cascade');
+
 
            
         });
