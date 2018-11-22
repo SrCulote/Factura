@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('/admin/clientes', 'ClienteController');
+
+Route::resource('/admin/facturas', 'FacturaController');
+
+Route::resource('/admin/tags', 'TaggController');
+
+Route::resource('/admin/tags', 'TaggController'); 
