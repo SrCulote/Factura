@@ -15,6 +15,7 @@
     <link href="{{asset('vendors/css/simple-line-icons.min.css')}}"rel="stylesheet">
     <!-- Main styles for this application -->
     <link href="{{asset('vendors/css/style.css')}}" rel="stylesheet">
+    
 </head>
 
 <body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">

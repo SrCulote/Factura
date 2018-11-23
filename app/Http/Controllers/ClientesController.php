@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Cliente;
 use Illuminate\Http\Request;
+use App\Cliente;
 
-class ClienteController extends Controller
+class ClientesController extends Controller
 {
     /**
      * Display a listing of the resource.

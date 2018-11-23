@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Factura;
 
-class FacturaController extends Controller
+class FacturasController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,7 +16,7 @@ class FacturaController extends Controller
     {
         //
         $facturas=Factura::get();
-        return view ('admin.facturas.create',compact('facturas'));
+        return view ('admin.facturas.index',compact('facturas'));
     }
 
     /**

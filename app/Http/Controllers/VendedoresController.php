@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Vendedor;
 
-class VendedorController extends Controller
+class VendedoresController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,6 +15,8 @@ class VendedorController extends Controller
     public function index()
     {
         //
+        $vendedores=Vendedor::get();
+        return view ('admin.vendedores.index',compact('vendedores'));
     }
 
     /**
@@ -24,6 +27,7 @@ class VendedorController extends Controller
     public function create()
     {
         //
+        return view ('admin.vendedores.create');
     }
 
     /**

@@ -15,10 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('/admin/clientes', 'ClienteController');
+Route::resource('/admin/clientes', 'ClientesController');
 
-Route::resource('/admin/facturas', 'FacturaController');
+Route::resource('/admin/facturas', 'FacturasController');
 
-Route::resource('/admin/tags', 'TaggController');
+Route::resource('/admin/productos', 'ProductosController');
 
-Route::resource('/admin/tags', 'TaggController'); 
+Route::resource('/admin/vendedores', 'VendedoresController');

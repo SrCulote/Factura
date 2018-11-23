@@ -1,5 +1,5 @@
 @extends('admin.index')
-@section('title','Listado Clientes')
+@section('title','Listado Categorias')
 
 @section('contenido')
     
